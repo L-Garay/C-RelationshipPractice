@@ -18,7 +18,7 @@ namespace relationships.Repositories
     }
 
 
-    internal PeopleHobby Create(PeopleHobby newData)
+    internal void Create(PeopleHobby newData)
     {
       string sql = @"
             INSERT INTO peoplehobbys 
@@ -29,7 +29,7 @@ namespace relationships.Repositories
             ";
       int id = _db.ExecuteScalar<int>(sql, newData);
       newData.Id = id;
-      return newData;
+      return;
     }
 
     internal void Delete(int id)

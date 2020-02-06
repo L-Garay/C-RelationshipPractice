@@ -46,4 +46,4 @@ use peoplehobbies;
 
 -- SELECT * FROM peoplehobbys ph
 -- JOIN hobbys h ON h.id = ph.hobbyId
--- WHERE personId = 1;
+-- WHERE personId = 4;

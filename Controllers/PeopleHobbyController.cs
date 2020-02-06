@@ -23,8 +23,8 @@ namespace relationships.Controllers
     {
       try
       {
-        _phs.Create(newData);
-        return Ok("Success");
+        return Ok(_phs.Create(newData));
+
       }
       catch (Exception e)
       {

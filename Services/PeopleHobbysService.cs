@@ -11,11 +11,12 @@ namespace relationships.Services
     {
       _phr = phr;
     }
-    internal void Create(PeopleHobby newData)
+    internal string Create(PeopleHobby newData)
     {
       PeopleHobby exists = _phr.Find(newData);
       if (exists != null) { throw new Exception("Student already enrolled"); }
       _phr.Create(newData);
+      return "Successfully Joined";
     }
 
     internal string Delete(PeopleHobby cs)
